@@ -1,0 +1,19 @@
+.glow-image {
+  position: relative;
+}
+
+.glow-image__blur {
+  position: absolute;
+  inset: 10% 10% -8% 10%;
+  filter: blur(38px);
+  background: radial-gradient(circle, rgba(0, 242, 255, 0.32), transparent 68%);
+  z-index: 0;
+}
+
+.glow-image__img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,111 @@
+/* ============================================================
+   ANIMATIONS — Keyframes & Utility Classes
+   ============================================================ */
+
+/* ── Keyframes ──────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-8px) rotate(1deg); }
+  66%       { transform: translateY(-4px) rotate(-1deg); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 242, 255, 0.2); }
+  50%       { box-shadow: 0 0 50px rgba(0, 242, 255, 0.5), 0 0 80px rgba(0, 242, 255, 0.15); }
+}
+
+@keyframes border-glow {
+  0%   { border-color: rgba(0, 242, 255, 0.2); box-shadow: 0 0 16px rgba(0, 242, 255, 0.1); }
+  100% { border-color: rgba(0, 242, 255, 0.6); box-shadow: 0 0 40px rgba(0, 242, 255, 0.35); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+@keyframes progress-fill {
+  from { width: 0; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes loading-bar {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes loading-fade {
+  0%   { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; pointer-events: none; }
+}
+
+/* ── Utility animation classes ──────────────────────────────── */
+.anim-float      { animation: float      6s ease-in-out infinite; }
+.anim-float-slow { animation: float-slow 9s ease-in-out infinite; }
+.anim-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+.anim-spin-slow  { animation: spin-slow  20s linear infinite; }
+.anim-spin-rev   { animation: spin-reverse 25s linear infinite; }
+.anim-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 242, 255, 0.15) 50%,
+    transparent 100%
+  );
+  background-size: 200% auto;
+  animation: shimmer 2.5s linear infinite;
+}

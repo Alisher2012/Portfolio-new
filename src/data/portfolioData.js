@@ -1,0 +1,83 @@
+export const portfolioData = {
+  about: {
+    title: 'About Me',
+    subtitle: 'Senior Frontend Engineer focused on premium digital products.',
+    bio: `I build high-performance interfaces that balance visual elegance with business impact. 
+Over the last 7 years I have shipped SaaS dashboards, design systems, and conversion-focused e-commerce flows for global teams.
+My process combines UX thinking, clean architecture, and motion-driven storytelling to deliver websites that feel modern, fast, and memorable.`,
+    stats: [
+      { label: 'Years Experience', value: '7+' },
+      { label: 'Projects Delivered', value: '62' },
+      { label: 'Global Clients', value: '24' },
+      { label: 'Avg Lighthouse', value: '95+' },
+    ],
+    techStack: [
+      'React',
+      'JavaScript',
+      'Framer Motion',
+      'CSS Architecture',
+      'Design Systems',
+      'Accessibility',
+      'Vite',
+      'REST / GraphQL',
+      'Node.js',
+      'Performance',
+      'Figma',
+      'Git',
+    ],
+  },
+  projects: {
+    title: 'Featured Projects',
+    subtitle: 'Selected products crafted with engineering precision and premium UX.',
+    categories: ['All', 'Web', 'Mobile', 'UI/UX'],
+    items: [
+      {
+        id: 1,
+        title: 'Nexa Finance Dashboard',
+        category: 'Web',
+        description: 'Enterprise analytics dashboard with role-based widgets and real-time insights.',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
+        demoUrl: '#',
+        githubUrl: '#',
+      },
+      {
+        id: 2,
+        title: 'Pulse Fitness Mobile UI',
+        category: 'Mobile',
+        description: 'High-fidelity mobile experience with habit tracking and gamified routines.',
+        image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1200',
+        demoUrl: '#',
+        githubUrl: '#',
+      },
+      {
+        id: 3,
+        title: 'Orbit Commerce Redesign',
+        category: 'UI/UX',
+        description: 'Conversion-first redesign for a luxury commerce brand, from wireframes to production.',
+        image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1200',
+        demoUrl: '#',
+        githubUrl: '#',
+      },
+      {
+        id: 4,
+        title: 'CloudOps Control Center',
+        category: 'Web',
+        description: 'Operational platform for distributed teams with complex filtering and monitoring.',
+        image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&q=80&w=1200',
+        demoUrl: '#',
+        githubUrl: '#',
+      },
+    ],
+  },
+  contact: {
+    title: 'Let’s Build Something Premium',
+    subtitle: 'Open for senior frontend roles, consulting, and product collaborations.',
+    email: 'hello@ziyodullaev.dev',
+    socials: [
+      { label: 'GitHub', url: '#' },
+      { label: 'LinkedIn', url: '#' },
+      { label: 'Telegram', url: '#' },
+      { label: 'Instagram', url: '#' },
+    ],
+  },
+};
